@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mengtongma.make24v1.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+        <Chronometer
+            android:id="@+id/elapsedTime"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="45dp"
+            android:textSize="20sp"
+            android:background="@drawable/border_style" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Attempt"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/attempt"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_style"
+            android:text="1"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/succeeded"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/rightTimes"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_style"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:text="@string/skip"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/skippedTimes"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/border_style"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="@drawable/text_border_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/linearLayout2"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnNumber1"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:textSize="25sp"
+            android:background="@drawable/number_border_style"/>
+
+        <Button
+            android:id="@+id/btnNumber2"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:textSize="25sp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/number_border_style"/>
+
+        <Button
+            android:id="@+id/btnNumber3"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:textSize="25sp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/number_border_style"/>
+
+        <Button
+            android:id="@+id/btnNumber4"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:textSize="25sp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/number_border_style"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:textSize="25sp"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:text="-"
+            android:textSize="30sp"
+            android:layout_marginLeft="15dp"/>
+
+        <Button
+            android:id="@+id/btnMultiple"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:text="*"
+            android:textSize="25sp"
+            android:layout_marginLeft="15dp"/>
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:text="/"
+            android:textSize="25sp"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnLeftBracket"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:text="("
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btnRightBracket"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:text=")"
+            android:textSize="25sp"
+            android:layout_marginLeft="15dp"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+
+            android:text="Del"
+            android:textSize="21sp"
+            android:layout_marginLeft="15dp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:text="Done"
+            android:textSize="21sp"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
